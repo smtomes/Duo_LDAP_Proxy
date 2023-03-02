@@ -16,7 +16,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       plugins: [vue()],
       build: {
         emptyOutDir: true,
-        outDir: isDev ? "../blackbox_server/public" : "dist",
+        outDir: isDev ? "./server/public" : "dist",
       },
     };
   }
